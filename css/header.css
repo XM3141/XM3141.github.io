@@ -1,0 +1,161 @@
+.header {
+    /* position: absolute; */
+    position: fixed;
+    /* 该定位设置为顶部固定 */
+    /* background-color: black; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 69px;
+    /* padding: 20px; */
+    /* border-bottom: 1px solid var(--cultured); */
+    /* padding: 30px 100px; */
+    /*30px距离上方，100px距离左边*/
+    display: flex;
+    /*元素之间横向排布*/
+    /* justify-content: space-between; */
+    /* 均匀排列每个元素首个元素放置于起点，末尾元素放置于终点 */
+    align-items: center;
+    /*元素位于容器的中心。*/
+    z-index: 100000;
+    /* 图层位置，优先级吧 */
+    transition: 1s;
+    /* border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px; */
+}
+
+.header:hover {
+    /* 指针响应 */
+    background-color: white;
+    /* background-color: black; */
+    transition: 1s;
+}
+
+
+.header-logo {
+    margin: 0;
+    width: 0;
+    height: auto;
+    padding: 20px;
+    text-decoration: none;
+    /* 去除划线 */
+    color: white;
+    /* text-align: center; */
+}
+
+.header:hover .header-logo {
+    color: black;
+}
+
+/* @font-face {
+    不知道这里的链接是用来干嘛
+    font-family: "FontAwesome";
+    src: url("./fontawesome-webfont.eot");
+    src: url("./fontawesome-webfont.eot") format("embedded-opentype"),
+        url("./fontawesome-webfont.woff2") format("woff2"),
+        url(".fontawesome-webfont.woff") format("woff"),
+        url("./fontawesome-webfont.ttf") format("truetype"),
+        url("./fontawesome-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+} */
+
+.header-search-container {
+    /* position: relative; */
+    margin: auto;
+    padding: 0px;
+    /* align-items: center; */
+}
+
+.search-box {
+    font-family: FontAwesome;
+    position: absolute;
+    /* top: 30%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 搜索框平移：向两边 */
+    background: #ffffff;
+    height: 40px;
+    border: 10px;
+    border-radius: 40px;
+    padding: 8px;
+    opacity: 0;
+    transition-delay: 99999999s;
+    transition-duration: 1s;
+}
+
+.search-box:hover>.search-txt {
+    /* 控制搜索框长度 */
+    width: 250px;
+    padding: 0 6px;
+}
+
+.search-box:hover>.search-btn {
+    color: white;
+    /* background: black; */
+    background: #B22222;
+}
+
+.search-btn {
+    /* 搜索图标 */
+    transition: 0.5s;
+    font-family: FontAwesome;
+    font-size: 25px;
+    color: black;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: rgb(51, 159, 150);
+    font-size: 16px;
+    transition: 0.6s;
+    line-height: 42px;
+    width: 0px;
+}
+
+@keyframes flash {
+    50% {
+        transform: scale(1.5);
+    }
+
+    80% {
+        transform: rotate(-60deg);
+    }
+
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
+html:hover .search-box {
+    opacity: 1;
+    /* 搜索框透明度 */
+    transition-delay: 0s;
+    transition-duration: 0s;
+}
+
+.bars {
+    right: 0;
+    color: white;
+    /* align-items: center; */
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+.header:hover .bars {
+    color: black;
+}

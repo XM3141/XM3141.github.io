@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+@font-face {
+    font-family: 汉仪程行简;
+    src: url('../fonts/汉仪程行简.ttf');
+}
+
+* {
+    /* width: auto; */
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; 统一所有盒子*/
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+
+body {
+    /* background: #0a2a43; */
+    /* 全背景色：墨蓝色 */
+    background: black;
+    min-height: 150vh;
+    /*页面至少都有150vh的高度 */
+}
+
+section {
+    position: relative;
+    /* 相对定位：相对于自身位置定位 */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* 溢出隐藏 */
+    display: flex;
+    /* 弹性盒子模型 */
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+}
+
+section::before {
+    /* 创建一个伪元素，在前面，其将成为匹配选中的元素的第一个子元素。常通过 content 属性来为一个元素添加修饰性的内容 */
+    /* 颜色渐变 */
+    content: '';
+    /* 类似于插入 */
+    position: absolute;
+    /* 绝对定位 */
+    bottom: 0;
+    /* 底部 */
+    width: 100%;
+    /* 宽度 */
+    height: 100px;
+    /* 高度 */
+    /* background: linear-gradient(to top, #0a2a43, transparent); */
+    background: linear-gradient(to top, black, transparent);
+    /* 背景色：渐变色 */
+    z-index: 10000;
+    /* 设置元素的堆叠顺序：设置一个定位元素沿 z 轴的位置，z 轴定义为垂直延伸到显示区的轴。如果为正数，则离用户更近，为负数则表示离用户更远。 */
+}
+
+section::after {
+    /* 创建一个伪元素，在后面，作为已选中元素的最后一个子元素。通常会配合content属性来为该元素添加装饰内容。 */
+    /* 滤镜样式 */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #0a2a43; */
+    z-index: 10000;
+    mix-blend-mode: color;
+    /* 规定元素的内容应与其直接父背景颜色混合 */
+}
+
+/* 此CSS给section配置一个滤镜 */
+
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 最常见的裁剪模式，作用是把图片 等比例裁剪 ，并且 居中 */
+    pointer-events: none;
+    /* 定义元素是否对指针事件做出反应：auto：是；none：否 */
+}
+
+#text {
+    position: relative;
+    padding-bottom: 390px;
+    color: #fff;
+    /* font-family: 汉仪程行简; */
+    font-size: 8.6vw;
+    /* em为单位的字体大小不会随页面大小改变，所以在这里我做更改 */
+    z-index: 1;
+}
+
+#MyGoal {
+    z-index: 2;
+}

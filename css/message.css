@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Jengotan;
+    src: url('../fonts/Jengotan_PERSONAL_USE_ONLY.ttf');
+    /* src: url('/fonts/Jengotan_PERSONAL_USE_ONLY.woff')format('woff');
+    src: url('/fonts/Jengotan_PERSONAL_USE_ONLY.svg') format('svg'); */
+    /* 不要和其他CSS样式冲突 */
+}
+
+message {
+    display: block;
+    /* 定义为块 */
+    text-align: center;
+    /* margin-top: 23028px; */
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.message-text {
+    font-family: Jengotan;
+    /* font-family: "Jengotan PERSONAL USE ONLY"; */
+    font-size: 60px;
+    color: #fff;
+
+}

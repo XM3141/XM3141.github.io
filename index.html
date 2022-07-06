@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>杉殿一世工作室“官网”</title>
+  <link rel="icon" href="XM_3141.png" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/music.css" />
+  <!-- 此链接是管理专辑封面图的-->
+  <!-- <link rel="stylesheet" type="text/css" href="fonts\font-awesome-4.7.0\css\font-awesome.min.css" /> -->
+  <!-- 此链接是音乐控制图标 -->
+  <link rel="stylesheet" href="css/message.css" />
+  <link rel="stylesheet" href="css/show.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="header-logo" alt="XM_3141's logo" target="_blank">
+      <h3>XM_3141</h3>
+    </a>
+    <!-- 左侧logo -->
+    <div class="header-search-container">
+      <!-- 搜索框 -->
+      <!-- <center> -->
+      <div class="search-box">
+        <input class="search-txt" type='text' id='inp' placeholder="What are you looking for?" />
+        <input class="search-btn" type='button' id='btn' value='&#xf002' />
+      </div>
+      <!-- </center> -->
+    </div>
+    <nav class="bars"><i class="fa-solid fa-bars"></i></nav>
+    <!-- 侧导航 -->
+  </header>
+  <section>
+    <img src="./img/bg.png" id="bg" />
+    <img src="./img/stars.png" id="stars" />
+    <img src="./img/earth.png" id="earth" style="z-index: 0" />
+    <img src="./img/mars.png" id="mars" style="z-index: 0" />
+    <img src="./img/Gargantua.png" id="Gargantua" />
+    <img src="./img/My Goal.png" id="MyGoal" />
+    <!-- <h2 id="text"><span>Shandianyishi Studio</span><br /></h2> -->
+    <h2 id="text"><span>杉殿一世工作室</span><br /></h2>
+  </section>
+  <section2>
+    <message>
+      <p class="message-text">Hello World!</p>
+      <p class="message-text">Here is Shandianyishi Studio</p>
+      <p class="message-text">I am founder,XuMeizhi.</p>
+      <p class="message-text">Welcome to join us</p>
+      <p class="message-text">Making the world a better place together</p>
+      <p class="message-text">END</p>
+    </message>
+    <music>
+      <!-- 音乐小部件主体 -->
+      <audio id="music" src="music/Homesick.mp3"></audio>
+      <!-- <div class="music"><img id="bg_img" src="" /></div> -->
+      <!-- 音乐专辑模糊化背景图 -->
+      <div class="music-content">
+        
+        <div class="info">
+          <div class="info_left"><img id="song_img" src="" /></div>
+          <!-- 歌曲专辑图片 -->
+          <div class="info_right">
+            <div class="info_right_in">
+              <p id="song_name"></p>
+              <p id="singer"></p>
+              <!-- 歌名歌手 -->
+            </div>
+          </div>
+        </div>
+        <div class="progress">
+          <div id="progress_update" class="progress_update"></div>
+        </div>
+       
+        <div class="fi">
+          <a id="pre" href="#"><i class="fa fa-step-backward"></i></a>
+          <a id="playon" href="#"><i class="fa fa-pause-circle"></i></a>
+          <a id="playoff" href="#"><i class="fa fa-play-circle"></i></a>
+          <a id="next" href="#"><i class="fa fa-step-forward"></i></a>
+        </div>
+      
+      </div>
+    </music>
+    <show>
+       <div class="card">
+        <div class="circle"></div>
+        <div class="show-content">
+          <h2>创始人</h2>
+          <p>探索、创作、共享</p>
+          <p>喜欢尝试新鲜有趣且极具价值的事</p>
+          <p style="text-decoration:line-through">就是图一乐</p>
+          <a href="#" alt="查看更多">Learn more</a>
+        </div>
+        <img src="./show/20220705181610.png" alt="" height="50%" width="50%" />
+      </div>
+
+      <div class="card">
+        <div class="circle"></div>
+        <div class="show-content">
+          <h2>《守护》</h2>
+          <p>画于2018年12月</p>
+          <a href="#" alt="查看更多">Learn more</a>
+        </div>
+        <img src="./show/IMG_20181216_163758.jpg" alt="" height="50%" width="50%" />
+      </div>
+
+      <div class="card">
+        <div class="circle"></div>
+        <div class="show-content">
+          <h2>麻衣桑</h2>
+          <p>临摹于2022年1月</p>
+          <a href="#">Learn more</a>
+        </div>
+        <img src="./show/IMG_20220111_192750.jpg" alt="" height="50%" width="50%" />
+      </div>
+
+      <div class="card">
+        <div class="circle"></div>
+        <div class="show-content">
+          <h2>《致敬钢铁侠》</h2>
+          <p>画始于2019年5月</p>
+          <a href="#">Learn more</a>
+        </div>
+        <img src="./show/IMG_20220410_161521.jpg" alt="" height="50%" width="50%" />
+      </div>
+    </show>
+  </section2>
+  <footer>
+    <h4 class="footer1-a">关注我们</h4>
+    <footer1>
+      <div class="wrapper">
+        <div class="button">
+          <div class="icon">
+            <i class="fa-regular fa-p"></i>
+          </div>
+          <a href="https://www.pixiv.net/users/79680611">Pixiv</a>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fa-brands fa-bilibili"></i>
+          </div>
+          <a href="https://space.bilibili.com/1755406683"> BiliBili</a>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fa-solid fa-earth-asia"></i>
+          </div>
+          <a href="https://github.com/XM3141">Homepage</a>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <a href="https://github.com/XM3141">Github</a>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fa-brands fa-weixin"></i>
+          </div>
+          <a>Wechat</a>
+        </div>
+      </div>
+    </footer1>
+    <div class="footer2">
+      <a class="footer2-a" href="https://github.com/XM3141/shandianyishi" target="_blank">欢迎来到我的非商业学习向网站</a>
+      <a class="footer2-a">版权所有 © 2020-2022 杉殿一世工作室 XM_3141</a>
+      <a class="footer2-a"
+        href="https://www.bilibili.com/video/BV1GJ411x7h7?share_source=copy_web">京ICP备12345678900号</a>
+      <a class="footer2-a"><script language="JavaScript">
+      var caution = false;
+      function setCookie(name, value, expires, path, domain, secure) {
+        var curCookie =
+          name +
+          "=" +
+          escape(value) +
+          (expires ? "; expires=" + expires.toGMTString() : "") +
+          (path ? "; path=" + path : "") +
+          (domain ? "; domain=" + domain : "") +
+          (secure ? "; secure" : "");
+        if (!caution || (name + "=" + escape(value)).length <= 4000)
+          document.cookie = curCookie;
+        else if (confirm("Cookie exceeds 4KB and will be cut!"))
+          document.cookie = curCookie;
+      }
+      function getCookie(name) {
+        var prefix = name + "=";
+        var cookieStartIndex = document.cookie.indexOf(prefix);
+        if (cookieStartIndex == -1) return null;
+        var cookieEndIndex = document.cookie.indexOf(
+          ";",
+          cookieStartIndex + prefix.length
+        );
+        if (cookieEndIndex == -1) cookieEndIndex = document.cookie.length;
+        return document.cookie.substring(
+          cookieStartIndex + prefix.length,
+          cookieEndIndex
+        );
+      }
+      function deleteCookie(name, path, domain) {
+        if (getCookie(name)) {
+          document.cookie =
+            name +
+            "=" +
+            (path ? "; path=" + path : "") +
+            (domain ? "; domain=" + domain : "") +
+            "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+        }
+      }
+      function fixDate(date) {
+        var base = new Date(0);
+        var skew = base.getTime();
+        if (skew > 0) date.setTime(date.getTime() - skew);
+      }
+      var now = new Date();
+      fixDate(now);
+      now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000);
+      var visits = getCookie("counter");
+      if (!visits) visits = 1;
+      else visits = parseInt(visits) + 1;
+      setCookie("counter", visits, now);
+      document.write("您是第 " + visits + " 个来到本站的访客");
+    </script></a>
+    </div>
+  </footer>
+  
+  <script src="./js/index.js"></script>
+  <script src="js/search.js"></script>
+  <script type="text/javascript" src="js\music.js"></script>
+  <script src="https://kit.fontawesome.com/f23451c27c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
